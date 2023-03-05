@@ -2,5 +2,5 @@
 /shelf/
 /workspace.xml
 
-# Compile folder
-/out/
+# IntelliJ
+out/
