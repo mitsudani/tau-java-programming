@@ -12,6 +12,7 @@ public class Rectangle {
         width = 0;
     }
 
+    // Constructor
     public Rectangle(double length, double width) {
         // Can be set in these two ways:
         this.length = length;
