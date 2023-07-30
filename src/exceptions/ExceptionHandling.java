@@ -8,10 +8,11 @@ import java.util.Scanner;
 
 public class ExceptionHandling {
 
-    public static void main(String args[]) {
+    public static void main(String args[]) throws IOException {
 
-        createNewFile();
-        numbersExpectionHandling();
+        //createNewFile();
+        //numbersExpectionHandling();
+        createNewFileRethrow();
     }
 
     public static void createNewFile() {
@@ -42,6 +43,11 @@ public class ExceptionHandling {
         } finally {
             fileReader.close();
         }
+    }
+
+    public static void createNewFileRethrow() throws IOException {
+        File file = new File("resources/nonexistent.txt");
+        file.createNewFile();
     }
 
 }
