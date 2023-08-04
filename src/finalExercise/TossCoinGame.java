@@ -9,7 +9,9 @@ public class TossCoinGame {
 
         Coin coin = new Coin();
 
-        System.out.println(coin.flip());
+        coin.flip();
+        System.out.println(coin.getSide());
+
 
     }
 

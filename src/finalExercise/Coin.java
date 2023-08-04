@@ -16,8 +16,7 @@ public class Coin {
         this.side = side;
     }
 
-    public String flip() {
-        String side = (HEAD_OR_TAIL[new Random().nextInt(HEAD_OR_TAIL.length)]);
-        return side;
+    public void flip() {
+        this.side = (HEAD_OR_TAIL[new Random().nextInt(HEAD_OR_TAIL.length)]);
     }
 }
